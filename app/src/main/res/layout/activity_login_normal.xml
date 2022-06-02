@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondito"
+    android:background="@drawable/fonditoi11"
     tools:context=".loginNormal">
 
 
@@ -12,9 +12,8 @@
         android:id="@+id/imageView"
         android:layout_width="282dp"
         android:layout_height="185dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="236dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/solarprotec" />
@@ -132,7 +131,7 @@
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contrasenaOlvi"
-        app:layout_constraintVertical_bias="0.135"
+        app:layout_constraintVertical_bias="0.112"
         app:strokeWidth="4dp" />
 
     <Button
