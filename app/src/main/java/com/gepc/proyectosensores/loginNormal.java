@@ -35,7 +35,7 @@ public class loginNormal extends AppCompatActivity {
     Button loginButton;
     String is_signed_in="";
     SharedPreferences mPreferences;
-    String sharedprofFile="com.gepc.practicabd_gepc";
+    String sharedprofFile="com.gepc.proyectosensores";
     SharedPreferences.Editor preferencesEditor;
 
     @Override

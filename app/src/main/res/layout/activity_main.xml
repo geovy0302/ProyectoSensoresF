@@ -5,7 +5,103 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondito2"
-    tools:context=".MainActivity" />
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/cerrar_sesion"
+        android:layout_width="326dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#F44336"
+        android:text="Cerrar Sesión "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nombre_Usuario"
+        app:strokeWidth="4dp" />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/text_form"
+        android:text=" Pantalla priencipal  "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView89"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/text_form"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/Nombre_Usuario"
+        android:layout_width="461dp"
+        android:layout_height="81dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/text_form3"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"></TextView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="510dp"
+        android:layout_height="139dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/radio_normal2"
+        android:gravity="center"
+        android:text="Bienvenido/a a tu App de confianza querido/a: "
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"></TextView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="277dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView96"
+        app:srcCompat="@drawable/casa" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
