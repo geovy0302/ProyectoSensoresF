@@ -29,7 +29,7 @@ public class AgregarUsuario extends AppCompatActivity {
     Button rregister;
     String sname,susername,spassword, sedad;
     ProgressDialog pdDialog;
-    String URL_REGISTER = "http://192.168.88.24/ApiProyecto/ApisUsuarioGeneral/registration.php";
+    String URL_REGISTER = "http://gpssandcloud.com/RAYOSV_APIS/ApisUsuarioGeneral/registration.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,7 @@ public class AgregarUsuario extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intenregresar_menu = new Intent(AgregarUsuario.this, com.gepc.proyectosensores.loginNormal.class);
                 startActivity(intenregresar_menu);
+                finish();
             }
         });
 

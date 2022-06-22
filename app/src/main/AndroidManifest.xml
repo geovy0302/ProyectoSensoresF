@@ -3,34 +3,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.gepc.proyectosensores">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".ClaseGlobal"
         android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="UV-PHYTON APP"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@style/Theme.ProyectoSensores"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:usesCleartextTraffic"
         tools:targetApi="31">
         <activity
+            android:name=".MenuPrincipalOperadores"
+            android:exported="true" />
+        <activity
+            android:name=".BienvenidaUserOperador"
+            android:exported="true" />
+        <activity
+            android:name=".BienvenidaUserAdmin"
+            android:exported="true" />
+        <activity
+            android:name=".BienvenidaUserGeneral"
+            android:exported="true" />
+        <activity
             android:name=".AgregarUsuario"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".loginNormal"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:name=".MenuPrincipalAdmin"
+            android:exported="true" />
     </application>
 
 </manifest>

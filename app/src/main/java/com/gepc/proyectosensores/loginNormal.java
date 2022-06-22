@@ -27,7 +27,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class loginNormal extends AppCompatActivity {
- static final String URL_LOGIN = "http://192.168.88.24/ApiProyecto/login.php";
+ static final String URL_LOGIN = "http://gpssandcloud.com/RAYOSV_APIS/login.php";
     TextView Registernow;
     ProgressDialog pdDialog;
     String luser= "",lpass="";
@@ -37,6 +37,8 @@ public class loginNormal extends AppCompatActivity {
     SharedPreferences mPreferences;
     String sharedprofFile="com.gepc.proyectosensores";
     SharedPreferences.Editor preferencesEditor;
+     ClaseGlobal objGlobalAux;
+    //ClaseGlobal objGlobalAux = new ClaseGlobal() ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +49,7 @@ public class loginNormal extends AppCompatActivity {
         is_signed_in = mPreferences.getString("issignedin","false");
         if(is_signed_in.equals("true"))
         {
-            Intent i = new Intent(loginNormal.this,com.gepc.proyectosensores.MainActivity.class);
+            Intent i = new Intent(loginNormal.this, MenuPrincipalAdmin.class);
             startActivity(i);
             finish();
         }
@@ -62,6 +64,7 @@ public class loginNormal extends AppCompatActivity {
             public void onClick(View v) {
                 Intent register=new Intent(loginNormal.this,com.gepc.proyectosensores.AgregarUsuario.class);
                 startActivity(register);
+                finish();
             }
         });
 
@@ -102,14 +105,34 @@ public class loginNormal extends AppCompatActivity {
                                 int idA= jsonObject.getInt("Id_usuarios");
                                 String id=Integer.toString(idA);
                                 int id_Tipo= jsonObject.getInt("Id_TipoUsu-fk");
-                                String id_tipoU=Integer.toString(idA);
-                                Intent pantallaUsuario = new Intent(loginNormal.this,com.gepc.proyectosensores.MainActivity.class);
+                                String id_tipoU=Integer.toString(id_Tipo);
+                                objGlobalAux = (ClaseGlobal) getApplicationContext();
+                                objGlobalAux.setNombreUsuario(name);
+                                objGlobalAux.setTipo_usuario(id_tipoU);
+                                if(id_tipoU.equals("1")){
+                                    Intent pantallaUsuarioGeneral = new Intent(loginNormal.this, BienvenidaUserGeneral.class);
+                                    startActivity(pantallaUsuarioGeneral);
+                                    finish();
+                                }
+                                if(id_tipoU.equals("2")){
+                                    Intent pantallaUsuarioGeneral = new Intent(loginNormal.this, MenuPrincipalAdmin.class);
+                                    startActivity(pantallaUsuarioGeneral);
+                                    finish();
+                                }
+
+                                if(id_tipoU.equals("3")){
+                                    Intent pantallaUsuarioGeneral = new Intent(loginNormal.this, MenuPrincipalOperadores.class);
+                                    startActivity(pantallaUsuarioGeneral);
+                                    finish();
+                                }
+
+                                /*Intent pantallaUsuario = new Intent(loginNormal.this,com.gepc.proyectosensores.MainActivity.class);
                                 preferencesEditor.putString("issignedin","true");
                                 preferencesEditor.putString("SignedInUserID",id);
                                 preferencesEditor.putString("SignedInName",name);
                                 preferencesEditor.putString("SignedInusername",username);
                                 preferencesEditor.apply();
-                                startActivity(pantallaUsuario);
+                                startActivity(pantallaUsuario);*/
                             }
                             else{
                                 pdDialog.dismiss();

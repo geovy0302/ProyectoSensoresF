@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_inicio"
+            android:icon="@drawable/ic_baseline_home_work_24"
+            android:title=" Inicio-Home"></item>
+        <item
+            android:id="@+id/Pantalla1"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            android:title=" Registro Usuario "></item>
+        <item
+            android:id="@+id/Pantalla2"
+            android:icon="@drawable/informationapp"
+            android:title=" Información de Sensores "></item>
+        <item
+            android:id="@+id/Pantalla3"
+            android:icon="@drawable/medidor_ruv"
+            android:title=" Datos por Sensor "></item>
+        <item
+            android:id="@+id/Pantalla4"
+            android:icon="@drawable/tips_informativos"
+            android:title=" Administrador de Consejos  "></item>
+
+        <item
+            android:id="@+id/Pantalla5"
+            android:icon="@drawable/apagado"
+            android:title=" cerrar Sesión  "></item>
+    </group>
+</menu>
