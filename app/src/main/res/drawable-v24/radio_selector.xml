@@ -6,7 +6,7 @@
     ></item>
 
     <item android:state_checked="false"
-        android:drawable="@drawable/radio_normal"
+        android:drawable="@drawable/radio_normal2"
     ></item>
 
 </selector>

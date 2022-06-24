@@ -34,7 +34,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="32dp"
-        android:background="@drawable/radio_selector2"
+        android:background="@drawable/radio_normal2"
         android:gravity="center"
         android:text="Tips Informativo del Día : "
         android:textColor="@color/black"
