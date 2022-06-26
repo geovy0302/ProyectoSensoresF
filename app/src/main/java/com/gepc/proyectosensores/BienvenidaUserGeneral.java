@@ -1,6 +1,7 @@
 package com.gepc.proyectosensores;
 
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -44,6 +45,8 @@ ActivityBienvenidaUserGeneralBinding ActivityBienvenidaUserGeneralBinding;
         setContentView(R.layout.activity_bienvenida_user_general);
         ActivityBienvenidaUserGeneralBinding = ActivityBienvenidaUserGeneralBinding.inflate(getLayoutInflater());
         setContentView( ActivityBienvenidaUserGeneralBinding.getRoot());
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 
         /*if(nombre.isEmpty())

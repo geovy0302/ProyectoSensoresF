@@ -1,5 +1,6 @@
 package com.gepc.proyectosensores;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -41,6 +42,8 @@ public class BienvenidaUserOperador extends BasedelMenuOpcUOperador {
         setContentView(R.layout.activity_bienvenida_user_operador);
         activityBienvenidaUserOperadorBinding = ActivityBienvenidaUserOperadorBinding.inflate(getLayoutInflater());
         setContentView( activityBienvenidaUserOperadorBinding.getRoot());
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 
         //preferencesEditor = mPreferences.edit();

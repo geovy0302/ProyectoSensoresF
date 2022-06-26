@@ -2,6 +2,7 @@ package com.gepc.proyectosensores;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -35,6 +36,9 @@ public class AgregarUsuario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_usuario);
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         Button regresar_menu = (Button)findViewById(R.id.regresar);
         regresar_menu.setOnClickListener(new View.OnClickListener() {
             @Override

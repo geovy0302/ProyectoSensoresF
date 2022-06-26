@@ -1,8 +1,12 @@
 package com.gepc.proyectosensores;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -29,7 +33,7 @@ public class EscogerLocalizacion_UGeneral extends BasedelMenuOpcUGeneral{
     SharedPreferences mPreferences;
     String sharedprofFile="com.gepc.proyectosensores";
     SharedPreferences.Editor preferencesEditor;
-    String nombre,tipo_User, indice_tip;
+    String nombre,tipo_User, indice_tip,Localizacion_esogida ;
     Button Buscar;
     TextView Signedinusername, Contenedor_Tips;
     ClaseGlobal objGlobalAux;
@@ -46,6 +50,8 @@ public class EscogerLocalizacion_UGeneral extends BasedelMenuOpcUGeneral{
         activityEscogerLocalizacionUgeneralBinding = ActivityEscogerLocalizacionUgeneralBinding.inflate(getLayoutInflater());
         setContentView( activityEscogerLocalizacionUgeneralBinding.getRoot());
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
 
 
         Signedinusername = (TextView)findViewById(R.id.Nombre_Usuario);
@@ -60,7 +66,35 @@ public class EscogerLocalizacion_UGeneral extends BasedelMenuOpcUGeneral{
 
         SpinnnerLoccalizacion = (Spinner) findViewById(R.id.spinnerLocalizacion);
         init();
+
+        SpinnnerLoccalizacion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Localizacion_esogida = parent.getSelectedItem().toString();
+                Toast.makeText(parent.getContext(), "Ha seleccionado: "+ Localizacion_esogida , Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        Buscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intenbuscarIndice = new Intent(EscogerLocalizacion_UGeneral.this, com.gepc.proyectosensores.IndiceCalculado_UGeneral.class);
+                intenbuscarIndice.putExtra("Localizacion_esogida", Localizacion_esogida) ;
+                startActivity(intenbuscarIndice);
+                finish();
+            }
+        });
+
+
+
     }
+
+
 
     public void init(){
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URL_BUSCAR,

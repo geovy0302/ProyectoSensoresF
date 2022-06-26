@@ -2,6 +2,7 @@ package com.gepc.proyectosensores;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,8 @@ public class MenuPrincipalAdmin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menuprinicipal_admin);
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         mPreferences=getSharedPreferences(sharedprofFile,MODE_PRIVATE);
         //preferencesEditor = mPreferences.edit();

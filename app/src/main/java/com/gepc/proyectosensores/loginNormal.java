@@ -3,6 +3,7 @@ package com.gepc.proyectosensores;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -44,6 +45,9 @@ public class loginNormal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_normal);
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         mPreferences=getSharedPreferences(sharedprofFile,MODE_PRIVATE);
         preferencesEditor = mPreferences.edit();
         is_signed_in = mPreferences.getString("issignedin","false");
@@ -126,13 +130,7 @@ public class loginNormal extends AppCompatActivity {
                                     finish();
                                 }
 
-                                /*Intent pantallaUsuario = new Intent(loginNormal.this,com.gepc.proyectosensores.MainActivity.class);
-                                preferencesEditor.putString("issignedin","true");
-                                preferencesEditor.putString("SignedInUserID",id);
-                                preferencesEditor.putString("SignedInName",name);
-                                preferencesEditor.putString("SignedInusername",username);
-                                preferencesEditor.apply();
-                                startActivity(pantallaUsuario);*/
+
                             }
                             else{
                                 pdDialog.dismiss();

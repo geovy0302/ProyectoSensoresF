@@ -2,6 +2,7 @@ package com.gepc.proyectosensores;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,10 +20,14 @@ public class MenuPrincipalOperadores extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal_operadores);
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         mPreferences=getSharedPreferences(sharedprofFile,MODE_PRIVATE);
         //preferencesEditor = mPreferences.edit();
         //tipo_User=extras.getString("tipo_User");
         //nombre=extras.getString("nombreUser");
+
+
 
         Button Opcion1 = (Button)findViewById(R.id.opcion1);
         Opcion1.setOnClickListener(new View.OnClickListener() {

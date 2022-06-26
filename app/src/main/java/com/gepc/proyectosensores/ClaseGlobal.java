@@ -5,7 +5,15 @@ import android.app.Application;
 public class ClaseGlobal extends Application {
     private String NombreUsuario;
     private String Tipo_usuario;
+    private Double IndiceGenerado;
 
+    public Double getIndiceGenerado() {
+        return IndiceGenerado;
+    }
+
+    public void setIndiceGenerado(Double indiceGenerado) {
+        IndiceGenerado = indiceGenerado;
+    }
 
     public String getTipo_usuario() {
         return Tipo_usuario;

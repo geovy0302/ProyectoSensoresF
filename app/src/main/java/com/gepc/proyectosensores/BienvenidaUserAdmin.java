@@ -1,5 +1,6 @@
 package com.gepc.proyectosensores;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -41,6 +42,8 @@ public class BienvenidaUserAdmin extends BasedelMenuOpcUAdmin {
         setContentView(R.layout.activity_bienvenida_user_admin);
         activityBienvenidaUserAdminBinding = ActivityBienvenidaUserAdminBinding.inflate(getLayoutInflater());
         setContentView( activityBienvenidaUserAdminBinding.getRoot());
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 
         //preferencesEditor = mPreferences.edit();
