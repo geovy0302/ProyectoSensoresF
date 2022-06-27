@@ -14,4 +14,13 @@
         <!-- Customize your theme here. -->
         <item name="android:navigationBarColor">#D50000</item>
     </style>
+
+    <style name="Theme.ProyectoSensores.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ProyectoSensores.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ProyectoSensores.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
