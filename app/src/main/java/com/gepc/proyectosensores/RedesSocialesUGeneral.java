@@ -1,7 +1,9 @@
 package com.gepc.proyectosensores;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,20 +13,14 @@ import android.widget.Toast;
 
 import com.gepc.proyectosensores.databinding.ActivityRedesSocialesUgeneralBinding;
 
-import java.util.Random;
-
 public class RedesSocialesUGeneral extends BasedelMenuOpcUGeneral {
     ActivityRedesSocialesUgeneralBinding activityRedesSocialesUgeneralBinding;
 
     SharedPreferences mPreferences;
     String sharedprofFile="com.gepc.proyectosensores";
     SharedPreferences.Editor preferencesEditor;
-    String nombre,tipo_User, indice_tip;
-    //Button logout;
+    String nombre, app_a_visitar, indice_tip;
     TextView Signedinusername, Contenedor_Tips;
-    Random random;
-    int nummeroRandom;
-    //ClaseGlobal objGlobalAux = new ClaseGlobal() ;
     ClaseGlobal objGlobalAux;
 
     ListView list;
@@ -74,18 +70,24 @@ public class RedesSocialesUGeneral extends BasedelMenuOpcUGeneral {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // TODO Auto-generated method stub
                 if(position == 0) {
-                    //code specific to first list item
                     Toast.makeText(getApplicationContext()," Haz seleccionado el App de Facebook ",Toast.LENGTH_SHORT).show();
+                    app_a_visitar="https://www.facebook.com/";
+                    Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse(app_a_visitar));
+                    startActivity(intent);
                 }
 
-                else if(position == 1) {
-                    //code specific to 2nd list item
+                else if(position == 1) {//code specific to 2nd list item
                     Toast.makeText(getApplicationContext()," Haz seleccionado el App de Instagram ",Toast.LENGTH_SHORT).show();
+                    app_a_visitar="https://www.google.com/";
+                    Intent intent2=new Intent(Intent.ACTION_VIEW, Uri.parse(app_a_visitar));
+                    startActivity(intent2);
                 }
 
                 else if(position == 2) {
-
                     Toast.makeText(getApplicationContext()," Haz seleccionado el App de YouTube ",Toast.LENGTH_SHORT).show();
+                    app_a_visitar="https://www.youtube.com/channel/UCHfgQ3YDfB41AaQZ8vJQDjw/featured";
+                    Intent intent3=new Intent(Intent.ACTION_VIEW, Uri.parse(app_a_visitar));
+                    startActivity(intent3);
                 }
             }
         });

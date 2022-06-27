@@ -42,6 +42,7 @@ public class BasedelMenuOpcUOperador extends AppCompatActivity implements Naviga
             case R.id.home_inicio:
                 startActivity(new Intent(this, BienvenidaUserOperador.class));
                 overridePendingTransition(0, 0);
+                finish();
                 break;
 
             case R.id.Pantalla1:
@@ -57,6 +58,7 @@ public class BasedelMenuOpcUOperador extends AppCompatActivity implements Naviga
             case R.id.Pantalla3:
                 startActivity(new Intent(this, MenuPrincipalOperadores.class));
                 overridePendingTransition(0, 0);
+                finish();
                 break;
         }
         return false;

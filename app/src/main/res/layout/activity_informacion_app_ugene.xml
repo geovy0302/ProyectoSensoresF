@@ -4,40 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#01579B"
-    tools:context=".RedesSocialesUGeneral">
+    android:background="@color/white"
+    tools:context=".InformacionAPP_UGene">
 
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView"
-        android:layout_width="813dp"
-        android:layout_height="643dp"
-        android:src="@drawable/redesoscilaes2"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/contenedor_Tip"
+        android:layout_width="712dp"
+        android:layout_height="339dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_form3"
+        android:gravity="center"
+        android:text="Somos un app que se está incursionando al mercado de las aplicaciones móviles para usuarios como tú, con la única finalidad de brindarte por medio de recursos dinámicos una serie de consejos y tips para que ante la actividad  de radeación solar que se produce en cierto lugar al que quieras visitar y que se encuentre registrado dentro de neustras opciones de localización;  podamos lograr que si presentas alguna afección dermatológica puedas aplicar las medidas necesarias. Por otro lado sino posee ninguna afección de las anteriormente mencionadas puedas de igual manera protegerte ante tal fénomeno y no llegues a sufirir de ningún tipo de afección."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gifImageView2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView2"
-        android:layout_width="813dp"
-        android:layout_height="640dp"
-        android:src="@drawable/redesoscilaes2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"></TextView>
 
     <TextView
         android:id="@+id/textView96"
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:background="@drawable/text_form"
-        android:text=" Usuario General- Redes Sociales "
+        android:text=" Usuario General - Información del App  "
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -59,67 +55,63 @@
 
     <TextView
         android:id="@+id/Nombre_Usuario"
-        android:layout_width="420dp"
-        android:layout_height="62dp"
+        android:layout_width="434dp"
+        android:layout_height="83dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/text_registration"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/text_form3"
         android:gravity="center"
         android:text=" "
         android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView96"></TextView>
 
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="691dp"
-        android:layout_height="98dp"
+        android:layout_width="480dp"
+        android:layout_height="82dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/radio_normal2"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/radio_normal_extra"
         android:gravity="center"
-        android:text="Sólo escoge según sea tu gusto y comienza a Seguirnos desde hoy : "
-        android:textColor="@color/black"
+        android:text="¿Qué es UV-PHYTON APP?"
+        android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"></TextView>
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="305dp"
-        android:layout_height="188dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="221dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Nombre_Usuario"
-        app:srcCompat="@drawable/redesuserg" />
+        app:srcCompat="@drawable/informationappfinal" />
 
 
-    <ListView
-        android:id="@+id/listV"
-        android:layout_width="647dp"
-        android:layout_height="367dp"
-        android:layout_marginTop="60dp"
-        android:background="@color/white"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        android:textStyle="bold"
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="642dp"
+        android:layout_height="328dp"
+        android:src="@drawable/proteccionpiel"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
+        app:layout_constraintTop_toBottomOf="@+id/contenedor_Tip"
+        app:layout_constraintVertical_bias="0.173" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

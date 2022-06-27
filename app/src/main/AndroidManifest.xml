@@ -19,6 +19,9 @@
         tools:replace="android:usesCleartextTraffic"
         tools:targetApi="31">
         <activity
+            android:name=".InformacionAPP_UGene"
+            android:exported="false" />
+        <activity
             android:name=".RedesSocialesUGeneral"
             android:exported="false" />
         <activity

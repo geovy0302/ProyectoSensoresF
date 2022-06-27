@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable-v24/TextNuevo.xml" value="0.1585" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable-v24/casa.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable-v24/ic_baseline_home_work_24.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable-v24/ic_baseline_supervised_user_circle_24.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
@@ -22,8 +23,10 @@
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable-v24/text_registration.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable/alto.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable/analisisruv.xml" value="0.1" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable/apagado.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable/candado.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable/informationappfinal.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable/medidor_ruv.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable/persona.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/drawable/radio_normal_extra.xml" value="0.1" />
@@ -48,6 +51,7 @@
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_bienvenida_user_operador.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_escoger_localizacion_ugeneral.xml" value="0.12" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_indice_calculado_ugeneral.xml" value="0.15" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_informacion_app_ugene.xml" value="0.12" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_lista_redes_sociales.xml" value="0.18" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_login_normal.xml" value="0.12" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_main.xml" value="0.11" />
@@ -64,6 +68,7 @@
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/lista_cuidadosug.xml" value="0.12" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/menu/navegacion_principal.xml" value="0.18" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/menu/navegacion_usuarioadmin.xml" value="0.10208333333333333" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/menu/navegacion_usuariogeneral.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>

@@ -56,10 +56,10 @@ public class BasedelMenuOpcUGeneral extends AppCompatActivity implements Navigat
                 break;
 
             case R.id.Pantalla2:
-                /*startActivity(new Intent(this, EscogerLocalizacion_UGeneral.class));
+                startActivity(new Intent(this, InformacionAPP_UGene.class));
                 overridePendingTransition(0, 0);
                 finish();
-                break;*/
+                break;
 
             case R.id.Pantalla3:
                 startActivity(new Intent(this, RedesSocialesUGeneral.class));
