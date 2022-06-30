@@ -2,6 +2,7 @@ package com.gepc.proyectosensores;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
@@ -29,7 +31,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class RegistroUsuario_UA extends BasedelMenuOpcUAdmin {
 
@@ -45,7 +49,8 @@ public class RegistroUsuario_UA extends BasedelMenuOpcUAdmin {
     ListaUsuariosAdaptor AdapterNecesario;
     Button añadir, buscar;
 
-    static final String URL_USERS = "http://gpssandcloud.com/RAYOSV_APIS/ApisUsuarioAdmin/listadoDeUsuario.php";
+    static final String URL_USERS = "http://gpssandcloud.com/RAYOSV_APIS/ApisUsuarioAdmin/listadeUsuarios/listadoDeUsuario.php";
+    static final String URL_Eliminar= "http://gpssandcloud.com/RAYOSV_APIS/ApisUsuarioAdmin/listadeUsuarios/Eliminar.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +69,7 @@ public class RegistroUsuario_UA extends BasedelMenuOpcUAdmin {
         Signedinusername.setText(nombre);
 
         añadir = (Button)findViewById(R.id.Añadir);
-        buscar = (Button)findViewById(R.id.Buscar_user);
+        buscar = (Button)findViewById(R.id.retornar);
 
         ListaUsers = findViewById(R.id.listaUsuarios);//llamado al RecycleView
         ListaUsers.setHasFixedSize(true);
@@ -95,39 +100,57 @@ public class RegistroUsuario_UA extends BasedelMenuOpcUAdmin {
                             AdapterNecesario = new ListaUsuariosAdaptor(getApplicationContext(), listaTotal, new ListaUsuariosAdaptor.OnItemClickListener() {
                                 @Override
                                 public void onItemClick(View view, int position) {
-                                    //Toast.makeText(getApplicationContext(), "Este valor de la posición "+ String.valueOf(position), Toast.LENGTH_LONG).show();
-                                    AlertDialog.Builder builder= new AlertDialog.Builder(view.getContext());
-                                    ProgressDialog progressDialog = new ProgressDialog(view.getContext());
-                                    String[] dialogItem ={"Ver datos Usuarios", "Eliminar Usuario", "Modificar información Usuario"};
-                                    builder.setTitle(listaTotal.get(position).getView_IdNombre());
-                                    builder.setItems(dialogItem, new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialog, int opcion) {
-                                            switch (opcion){
-                                                case 0:
-                                                    //Toast.makeText(getApplicationContext(), " escogiste mostrar datos ", Toast.LENGTH_LONG).show();
-                                                    /*startActivity(new Intent(getApplicationContext(), mostrarDatos.class).
-                                                            putExtra("position", position));
-                                                    finish();*/
-                                                    break;
-                                                case 1:
-                                                    //Toast.makeText(getApplicationContext(), " escogiste eliminar datos ", Toast.LENGTH_LONG).show();
-                                                    /*int Auxiliar;
-                                                    String IdAuxiliar;
-                                                    Auxiliar= listaTotal.get(position).getView_IdUsuario();
-                                                    IdAuxiliar= Integer.toString(Auxiliar);
-                                                    EliminarDatos(IdAuxiliar);*/
-                                                    break;
-                                                case 2:
-                                                    //Toast.makeText(getApplicationContext(), " escogiste modificar datos ", Toast.LENGTH_LONG).show();
-                                                   /* startActivity(new Intent(getApplicationContext(), ModificarDatos.class).
-                                                            putExtra("position", position));
-                                                    finish();*/
-                                                    break;
+                                    String TipoUsers= listaTotal.get(position).getView_TipoUser();
+                                    if(TipoUsers.equals("General")){
+                                        AlertDialog.Builder builderre= new AlertDialog.Builder(view.getContext());
+                                        ProgressDialog progressDialogo = new ProgressDialog(view.getContext());
+                                        String[] dialogItems ={"Ver datos de este Usuarios"};
+                                        builderre.setTitle(listaTotal.get(position).getView_IdNombre());
+                                        builderre.setItems(dialogItems, new DialogInterface.OnClickListener() {
+
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                switch (which) {
+                                                    case 0:
+                                                            startActivity(new Intent(getApplicationContext(), MostrarDatosUsers.class).
+                                                                    putExtra("position", position));
+                                                            finish();
+                                                        break;
+                                                }
                                             }
-                                        }
-                                    });
-                                    builder.create().show();
+                                        });
+                                        builderre.create().show();
+                                    }else{
+                                        AlertDialog.Builder builder= new AlertDialog.Builder(view.getContext());
+                                        ProgressDialog progressDialog = new ProgressDialog(view.getContext());
+                                        String[] dialogItem ={"Ver datos de este Usuario", "Eliminar este Usuario", "Modificar información de Usuario"};
+                                        builder.setTitle(listaTotal.get(position).getView_IdNombre());
+                                        builder.setItems(dialogItem, new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int opcion) {
+                                                switch (opcion){
+                                                    case 0:
+                                                            startActivity(new Intent(getApplicationContext(), MostrarDatosUsers.class).
+                                                                    putExtra("position", position));
+                                                            finish();
+                                                        break;
+                                                    case 1:
+                                                         int Auxiliar;
+                                                         String IdAuxiliar;
+                                                         Auxiliar= listaTotal.get(position).getView_IdUsuario();
+                                                         IdAuxiliar= Integer.toString(Auxiliar);
+                                                         EliminarDatos(IdAuxiliar);
+                                                        break;
+                                                    case 2:
+                                                        startActivity(new Intent(getApplicationContext(), ModificarDatosUsers.class).
+                                                               putExtra("position", position));
+                                                        finish();
+                                                        break;
+                                                }
+                                            }
+                                        });
+                                        builder.create().show();
+                                    }
                                 }
                             });
                             ListaUsers.setAdapter(AdapterNecesario);
@@ -143,5 +166,45 @@ public class RegistroUsuario_UA extends BasedelMenuOpcUAdmin {
             }
         });
         Volley.newRequestQueue(getApplicationContext()).add(stringRequest);
+    }
+
+    private void EliminarDatos (final String idUser){
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_Eliminar,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.e("tagconvertstr","[ "+response+" ]");
+                        try{
+                            JSONObject jsonObject = new JSONObject(response.toString());
+                            String successAux = jsonObject.getString("success");
+                            if(successAux.equals("logrado")){
+                                Toast.makeText(getApplicationContext()," El usuario ha sido eliminado correctamente",Toast.LENGTH_LONG).show();
+                                startActivity(new Intent(getApplicationContext(),RegistroUsuario_UA.class));
+                                finish();
+                            }else{
+                                Toast.makeText(getApplicationContext()," El usuario no ha sido eliminado ",Toast.LENGTH_LONG).show();
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Toast.makeText(getApplicationContext(),"Error en Eliminar este Usuario "+e,Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(),"Error en realizar la acción de eliminación "+error,Toast.LENGTH_LONG).show();
+            }
+        })
+        {
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String,String> params = new HashMap<>();
+                params.put("idUsuario",idUser);
+                return params;
+            }
+        };
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
     }
 }
