@@ -19,6 +19,12 @@
         tools:replace="android:usesCleartextTraffic"
         tools:targetApi="31">
         <activity
+            android:name=".AgregarUsersAD_OP"
+            android:exported="false" />
+        <activity
+            android:name=".BuscarUser"
+            android:exported="false" />
+        <activity
             android:name=".ModificarDatosUsers"
             android:exported="false" />
         <activity

@@ -69,13 +69,31 @@ public class RegistroUsuario_UA extends BasedelMenuOpcUAdmin {
         Signedinusername.setText(nombre);
 
         añadir = (Button)findViewById(R.id.Añadir);
-        buscar = (Button)findViewById(R.id.retornar);
+        buscar = (Button)findViewById(R.id.buscarUser);
 
         ListaUsers = findViewById(R.id.listaUsuarios);//llamado al RecycleView
         ListaUsers.setHasFixedSize(true);
         ListaUsers.setLayoutManager( new LinearLayoutManager(this));
 
         Listado_de_Usuarios();
+
+        buscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intenbuscaruser = new Intent(RegistroUsuario_UA.this, com.gepc.proyectosensores.BuscarUser.class);
+                startActivity(intenbuscaruser);
+                finish();
+            }
+        });
+
+        añadir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intenbuscaruser = new Intent(RegistroUsuario_UA.this, com.gepc.proyectosensores.AgregarUsersAD_OP.class);
+                startActivity(intenbuscaruser);
+                finish();
+            }
+        });
     }
 
     private void Listado_de_Usuarios() {
