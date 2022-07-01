@@ -19,6 +19,9 @@
         tools:replace="android:usesCleartextTraffic"
         tools:targetApi="31">
         <activity
+            android:name=".DatosPorSensor_UA"
+            android:exported="false" />
+        <activity
             android:name=".AgregarUsersAD_OP"
             android:exported="false" />
         <activity

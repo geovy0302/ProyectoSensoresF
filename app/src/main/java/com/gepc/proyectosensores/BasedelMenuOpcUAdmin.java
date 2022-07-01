@@ -57,8 +57,9 @@ public class BasedelMenuOpcUAdmin extends AppCompatActivity implements Navigatio
                 break;
 
             case R.id.Pantalla3:
-                /*startActivity(new Intent(this, PantallaNo2.class));
-                overridePendingTransition(0, 0);*/
+                  startActivity(new Intent(this, DatosPorSensor_UA.class));
+                  overridePendingTransition(0, 0);
+                  finish();
                 break;
 
             case R.id.Pantalla4:

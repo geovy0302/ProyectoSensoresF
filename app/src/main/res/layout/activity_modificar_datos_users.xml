@@ -347,7 +347,7 @@
         app:srcCompat="@drawable/user2" />
 
     <Button
-        android:id="@+id/buscarUser"
+        android:id="@+id/buscarLocaliTipo"
         android:layout_width="390dp"
         android:layout_height="61dp"
         android:layout_alignParentStart="true"

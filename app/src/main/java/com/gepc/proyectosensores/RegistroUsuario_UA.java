@@ -69,7 +69,7 @@ public class RegistroUsuario_UA extends BasedelMenuOpcUAdmin {
         Signedinusername.setText(nombre);
 
         añadir = (Button)findViewById(R.id.Añadir);
-        buscar = (Button)findViewById(R.id.buscarUser);
+        buscar = (Button)findViewById(R.id.buscarLocaliTipo);
 
         ListaUsers = findViewById(R.id.listaUsuarios);//llamado al RecycleView
         ListaUsers.setHasFixedSize(true);
