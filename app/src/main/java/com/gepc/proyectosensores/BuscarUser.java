@@ -90,10 +90,10 @@ public class BuscarUser extends BasedelMenuOpcUAdmin  {
         Edad_user = (TextView) findViewById(R.id.edad_user);
         PasswordUser = (TextView) findViewById(R.id.contrasena_user);
         tipoUser = (TextView) findViewById(R.id.Tipo_user);
-        retornar1= (Button) findViewById(R.id.buscarLocaliTipo);
+        retornar1= (Button) findViewById(R.id.Retornar1);
          retornarAux= (Button) findViewById(R.id.retornar);
         retornar2= (Button) findViewById(R.id.anadiruser);
-        buscar= (Button) findViewById(R.id.buscarSens);
+        buscar= (Button) findViewById(R.id.Retornar2);
         buscarOtro= (Button) findViewById(R.id.anadiruser);
         useraBuscar = (EditText) findViewById(R.id.UserBuscar);
         //user_a_buscar=useraBuscar.getText().toString();

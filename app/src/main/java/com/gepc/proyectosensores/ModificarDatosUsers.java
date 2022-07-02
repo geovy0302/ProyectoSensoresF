@@ -64,7 +64,7 @@ public class ModificarDatosUsers extends BasedelMenuOpcUAdmin {
         Edad_user = (EditText) findViewById(R.id.edad_user);
         PasswordUser = (EditText) findViewById(R.id.contrasena_user);
         tipoUser = (TextView) findViewById(R.id.Tipo_user);
-        retornar= (Button) findViewById(R.id.buscarLocaliTipo);
+        retornar= (Button) findViewById(R.id.Retornar1);
         modificar= (Button) findViewById(R.id.Modificar);
         Intent intent = getIntent();
         position= intent.getExtras().getInt("position");

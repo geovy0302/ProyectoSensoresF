@@ -51,8 +51,9 @@ public class BasedelMenuOpcUOperador extends AppCompatActivity implements Naviga
                 break;
 
             case R.id.Pantalla2:
-                /*startActivity(new Intent(this, PantallaNo2.class));
-                overridePendingTransition(0, 0);*/
+                startActivity(new Intent(this,DatosPorSensor_UO.class));
+                overridePendingTransition(0, 0);
+                finish();
                 break;
 
             case R.id.Pantalla3:

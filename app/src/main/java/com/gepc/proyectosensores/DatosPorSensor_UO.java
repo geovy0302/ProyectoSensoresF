@@ -15,13 +15,12 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.gepc.proyectosensores.databinding.ActivityDatosPorSensorUaBinding;
+import com.gepc.proyectosensores.databinding.ActivityDatosPorSensorUoBinding;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,8 +29,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DatosPorSensor_UA extends BasedelMenuOpcUAdmin  {
-    ActivityDatosPorSensorUaBinding activityDatosPorSensorUaBinding;
+public class DatosPorSensor_UO extends BasedelMenuOpcUOperador {
+    ActivityDatosPorSensorUoBinding activityDatosPorSensorUoBinding;
     SharedPreferences mPreferences;
     String sharedprofFile="com.gepc.proyectosensores";
     SharedPreferences.Editor preferencesEditor;
@@ -51,13 +50,14 @@ public class DatosPorSensor_UA extends BasedelMenuOpcUAdmin  {
     ArrayList<TiposDeSensoresUni> arrayTipoSensores = new ArrayList<TiposDeSensoresUni>();
     ArrayList<nombreSensorBuscar> arraySensoresBuscar = new ArrayList<nombreSensorBuscar>();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_datos_por_sensor_ua);
+        setContentView(R.layout.activity_datos_por_sensor_uo);
 
-        activityDatosPorSensorUaBinding = ActivityDatosPorSensorUaBinding.inflate(getLayoutInflater());
-        setContentView( activityDatosPorSensorUaBinding.getRoot());
+        activityDatosPorSensorUoBinding = ActivityDatosPorSensorUoBinding.inflate(getLayoutInflater());
+        setContentView( activityDatosPorSensorUoBinding.getRoot());
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
@@ -131,7 +131,7 @@ public class DatosPorSensor_UA extends BasedelMenuOpcUAdmin  {
                 BuscarElSensor.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intenbuscaruser = new Intent(DatosPorSensor_UA.this, com.gepc.proyectosensores.DatosPorSensorPF_UA.class);
+                        Intent intenbuscaruser = new Intent(DatosPorSensor_UO.this, com.gepc.proyectosensores.DatosPorSensoPF_UO.class);
                         intenbuscaruser.putExtra("Localizacion_esogida", Localizacion_esogida );
                         intenbuscaruser.putExtra("tipoDeSensorEscogido",tipoDeSensorEscogido);
                         intenbuscaruser.putExtra("SensorEscogido", SensorEscogido );
@@ -159,7 +159,7 @@ public class DatosPorSensor_UA extends BasedelMenuOpcUAdmin  {
                                 localizacion.setDescripcion(array.getJSONObject(indice).getString("Descripcion_Lregion"));
                                 arrayLocaliazciones.add(localizacion);
                             }
-                            ArrayAdapter<ClaseGlobalLocalizaciones> adapterLocakizaciones = new ArrayAdapter<ClaseGlobalLocalizaciones>(DatosPorSensor_UA.this,android.R.layout.simple_dropdown_item_1line,arrayLocaliazciones);
+                            ArrayAdapter<ClaseGlobalLocalizaciones> adapterLocakizaciones = new ArrayAdapter<ClaseGlobalLocalizaciones>(DatosPorSensor_UO.this,android.R.layout.simple_dropdown_item_1line,arrayLocaliazciones);
                             localizacionesS.setAdapter(adapterLocakizaciones);
 
                         } catch (JSONException e) {
@@ -192,7 +192,7 @@ public class DatosPorSensor_UA extends BasedelMenuOpcUAdmin  {
                                 TipoSensoress.setDescripcion(array.getJSONObject(indice).getString("Descripcion_TS"));
                                 arrayTipoSensores.add(TipoSensoress);
                             }
-                            ArrayAdapter<TiposDeSensoresUni> adapterTipoSensores = new ArrayAdapter<TiposDeSensoresUni>(DatosPorSensor_UA.this,android.R.layout.simple_dropdown_item_1line,arrayTipoSensores);
+                            ArrayAdapter<TiposDeSensoresUni> adapterTipoSensores = new ArrayAdapter<TiposDeSensoresUni>(DatosPorSensor_UO.this,android.R.layout.simple_dropdown_item_1line,arrayTipoSensores);
                             TipodeSensoresS.setAdapter(adapterTipoSensores);
 
                         } catch (JSONException e) {
@@ -226,7 +226,7 @@ public class DatosPorSensor_UA extends BasedelMenuOpcUAdmin  {
                                     TipoSensoress.setDescripcion(array.getJSONObject(indice).getString("Nombre_Sensor"));
                                     arraySensoresBuscar.add(TipoSensoress);
                                 }
-                                ArrayAdapter<nombreSensorBuscar> adapterSensorBuscar = new ArrayAdapter<nombreSensorBuscar>(DatosPorSensor_UA.this,android.R.layout.simple_dropdown_item_1line,arraySensoresBuscar);
+                                ArrayAdapter<nombreSensorBuscar> adapterSensorBuscar = new ArrayAdapter<nombreSensorBuscar>(DatosPorSensor_UO.this,android.R.layout.simple_dropdown_item_1line,arraySensoresBuscar);
                                 SensoresEncontrados.setAdapter(adapterSensorBuscar);
                                 titulo1.setVisibility(View.VISIBLE);
                                 titulo2.setVisibility(View.VISIBLE);
@@ -255,13 +255,12 @@ public class DatosPorSensor_UA extends BasedelMenuOpcUAdmin  {
         {
             @Override
             protected Map<String, String> getParams() {
-            Map<String,String> params = new HashMap<>();
-            params.put("Localizacion_esogida",Localizacion_esogida);
-            params.put("tipoDeSensorEscogido",tipoDeSensorEscogido);
-            return params;
-        }
+                Map<String,String> params = new HashMap<>();
+                params.put("Localizacion_esogida",Localizacion_esogida);
+                params.put("tipoDeSensorEscogido",tipoDeSensorEscogido);
+                return params;
+            }
         };
         Volley.newRequestQueue(getApplicationContext()).add(stringRequest);
     }
-
 }

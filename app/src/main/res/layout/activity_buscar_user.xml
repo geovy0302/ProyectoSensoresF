@@ -8,7 +8,7 @@
     tools:context=".BuscarUser">
 
     <Button
-        android:id="@+id/buscarSens"
+        android:id="@+id/Retornar2"
         android:layout_width="192dp"
         android:layout_height="67dp"
         android:backgroundTint="#D50000"
@@ -39,7 +39,7 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/buscarSens"
+        app:layout_constraintEnd_toStartOf="@+id/Retornar2"
         app:layout_constraintHorizontal_bias="0.818"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
@@ -403,7 +403,7 @@
         app:srcCompat="@drawable/user2" />
 
     <Button
-        android:id="@+id/buscarLocaliTipo"
+        android:id="@+id/Retornar1"
         android:layout_width="390dp"
         android:layout_height="61dp"
         android:layout_alignParentStart="true"

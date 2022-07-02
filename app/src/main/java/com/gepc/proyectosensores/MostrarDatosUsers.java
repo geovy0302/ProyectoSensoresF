@@ -46,7 +46,7 @@ public class MostrarDatosUsers extends BasedelMenuOpcUAdmin {
         Edad_user = (TextView) findViewById(R.id.edad_user);
         PasswordUser = (TextView) findViewById(R.id.contrasena_user);
         tipoUser = (TextView) findViewById(R.id.Tipo_user);
-        retornar= (Button) findViewById(R.id.buscarLocaliTipo);
+        retornar= (Button) findViewById(R.id.Retornar1);
         Intent intent = getIntent();
         position= intent.getExtras().getInt("position");
 
