@@ -19,6 +19,27 @@
         tools:replace="android:usesCleartextTraffic"
         tools:targetApi="31">
         <activity
+            android:name=".AgregarSensor_UA"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarSensores_UA"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarSensores_UA"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroSensores_UA"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarCuidadosPiel_UA"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarCuidadosPiel_UA"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroDeCuidadosPiel_UA"
+            android:exported="false" />
+        <activity
             android:name=".AgregarTipsDelDia"
             android:exported="false" />
         <activity

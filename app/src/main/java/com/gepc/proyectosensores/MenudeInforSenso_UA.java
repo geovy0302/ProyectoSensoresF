@@ -60,9 +60,9 @@ public class MenudeInforSenso_UA extends BasedelMenuOpcUAdmin {
         Opcion3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent intenOpcion3 = new Intent(MenudeInforSenso_UA.this,com.gepc.proyectosensores.loginNormal.class);
+                Intent intenOpcion3 = new Intent(MenudeInforSenso_UA.this,com.gepc.proyectosensores.RegistroSensores_UA.class);
                 startActivity(intenOpcion3);
-                finish();*/
+                finish();
             }
         });
 

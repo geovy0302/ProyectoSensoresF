@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".RegistrodeTipodeSensores_UO">
-
+    tools:context=".RegistroDeCuidadosPiel_UA">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaDatosLoca"
@@ -21,13 +20,13 @@
 
     <Button
         android:id="@+id/AñadirLocali"
-        android:layout_width="376dp"
-        android:layout_height="74dp"
+        android:layout_width="365dp"
+        android:layout_height="85dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_marginTop="40dp"
         android:backgroundTint="#D50000"
-        android:text="Añadir Tipo Sensor"
+        android:text="Añadir Cuidado de la Piel"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"
@@ -41,8 +40,8 @@
 
     <Button
         android:id="@+id/Retonarmenu"
-        android:layout_width="328dp"
-        android:layout_height="74dp"
+        android:layout_width="326dp"
+        android:layout_height="85dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_marginStart="28dp"
@@ -65,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:background="@drawable/text_form"
-        android:text="Usuario Operador - Registro de Tipos de Sensores"
+        android:text="Usuario Administrador - Registro de Cuidados de la Piel"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -114,7 +113,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/text_form3"
         android:gravity="center"
-        android:text="Listado de Tipo de Sensores  Registrados :  "
+        android:text="Listado de Cuidados de la Piel  Registrados :  "
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -130,7 +129,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="28dp"
-        android:background="@drawable/radio_normal_extra3"
+        android:background="@drawable/radio_normal_extra2"
         android:gravity="center"
         android:text="Bienvenido/a a tu App de confianza "
         android:textColor="@color/white"
@@ -149,6 +148,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Nombre_Usuario"
-        app:srcCompat="@drawable/tiposdesensoresfinal" />
+        app:srcCompat="@drawable/cuidadopiel2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

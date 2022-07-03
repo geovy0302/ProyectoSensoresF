@@ -113,7 +113,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/text_form3"
         android:gravity="center"
-        android:text="Listado de Tipo de Sensores  Registradas :  "
+        android:text="Listado de Tipo de Sensores  Registrados :  "
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"

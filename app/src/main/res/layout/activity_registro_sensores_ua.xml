@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".RegistrodeTipodeSensores_UO">
-
+    tools:context=".RegistroSensores_UA">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaDatosLoca"
@@ -27,7 +26,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginTop="40dp"
         android:backgroundTint="#D50000"
-        android:text="Añadir Tipo Sensor"
+        android:text="Añadir Nuevo Sensor"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"
@@ -54,7 +53,6 @@
         android:textSize="25sp"
         android:textStyle="bold"
         app:cornerRadius="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/AñadirLocali"
         app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listaDatosLoca"
@@ -65,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:background="@drawable/text_form"
-        android:text="Usuario Operador - Registro de Tipos de Sensores"
+        android:text="Usuario Administrador - Registro de Sensores"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -87,8 +85,8 @@
 
     <TextView
         android:id="@+id/Nombre_Usuario"
-        android:layout_width="275dp"
-        android:layout_height="56dp"
+        android:layout_width="242dp"
+        android:layout_height="54dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -106,15 +104,15 @@
 
     <TextView
         android:id="@+id/titulito"
-        android:layout_width="453dp"
-        android:layout_height="61dp"
+        android:layout_width="363dp"
+        android:layout_height="63dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:background="@drawable/text_form3"
         android:gravity="center"
-        android:text="Listado de Tipo de Sensores  Registrados :  "
+        android:text="Listado de Sensores Registrados :  "
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -130,7 +128,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="28dp"
-        android:background="@drawable/radio_normal_extra3"
+        android:background="@drawable/radio_normal_extra2"
         android:gravity="center"
         android:text="Bienvenido/a a tu App de confianza "
         android:textColor="@color/white"
@@ -149,6 +147,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Nombre_Usuario"
-        app:srcCompat="@drawable/tiposdesensoresfinal" />
+        app:srcCompat="@drawable/sensores2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

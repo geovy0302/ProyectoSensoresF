@@ -50,9 +50,9 @@ public class MenudeAdministracionTP_CP_UA extends BasedelMenuOpcUAdmin {
         Opcion2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent intenOpcion2 = new Intent(MenudeAdministracionTP_CP_UA.this,com.gepc.proyectosensores.RegistrodeTipodeSensores_UA.class);
+                Intent intenOpcion2 = new Intent(MenudeAdministracionTP_CP_UA.this,com.gepc.proyectosensores.RegistroDeCuidadosPiel_UA.class);
                 startActivity(intenOpcion2);
-                finish();*/
+                finish();
             }
         });
     }

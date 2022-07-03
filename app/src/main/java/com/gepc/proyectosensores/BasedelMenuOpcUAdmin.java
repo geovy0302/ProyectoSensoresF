@@ -54,6 +54,7 @@ public class BasedelMenuOpcUAdmin extends AppCompatActivity implements Navigatio
             case R.id.Pantalla2:
                 startActivity(new Intent(this, MenudeInforSenso_UA.class));
                 overridePendingTransition(0, 0);
+                finish();
                 break;
 
             case R.id.Pantalla3:
@@ -65,6 +66,7 @@ public class BasedelMenuOpcUAdmin extends AppCompatActivity implements Navigatio
             case R.id.Pantalla4:
                 startActivity(new Intent(this, MenudeAdministracionTP_CP_UA.class));
                 overridePendingTransition(0, 0);
+                finish();
                 break;
 
             case R.id.Pantalla5:
