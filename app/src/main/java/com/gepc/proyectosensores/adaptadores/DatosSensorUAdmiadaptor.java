@@ -57,8 +57,8 @@ public class DatosSensorUAdmiadaptor extends RecyclerView.Adapter<DatosSensorUAd
         TextView View_Indice, View_hora;
         public DatosGeneViewHolder(@NonNull View itemView) {
             super(itemView);
-            View_Indice = itemView.findViewById(R.id.View_Indice);
-            View_hora = itemView.findViewById(R.id.View_hora);
+            View_Indice = itemView.findViewById(R.id.View_ID_Localizacion);
+            View_hora = itemView.findViewById(R.id.View_Nombre_Locali);
         }
     }
 }

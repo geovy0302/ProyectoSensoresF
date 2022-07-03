@@ -39,14 +39,14 @@ public class MostrarDatosUsers extends BasedelMenuOpcUAdmin {
         nombre = objGlobalAux.getNombreUsuario();
         Signedinusername.setText(nombre);
 
-        idUser = (TextView) findViewById(R.id.Id_User);
-        nombreUser = (TextView) findViewById(R.id.Nombre_user);
+        idUser = (TextView) findViewById(R.id.Id_locali);
+        nombreUser = (TextView) findViewById(R.id.Nombre_locali);
         loginUser = (TextView) findViewById(R.id.Login_user);
         telefono_user = (TextView) findViewById(R.id.Telefono_user);
         Edad_user = (TextView) findViewById(R.id.edad_user);
         PasswordUser = (TextView) findViewById(R.id.contrasena_user);
         tipoUser = (TextView) findViewById(R.id.Tipo_user);
-        retornar= (Button) findViewById(R.id.Retornar1);
+        retornar= (Button) findViewById(R.id.Regresar);
         Intent intent = getIntent();
         position= intent.getExtras().getInt("position");
 

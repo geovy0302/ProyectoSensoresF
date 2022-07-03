@@ -68,10 +68,10 @@ public class RegistroUsuario_UA extends BasedelMenuOpcUAdmin {
         nombre = objGlobalAux.getNombreUsuario();
         Signedinusername.setText(nombre);
 
-        añadir = (Button)findViewById(R.id.Añadir);
-        buscar = (Button)findViewById(R.id.Retornar1);
+        añadir = (Button)findViewById(R.id.Retonarmenu);
+        buscar = (Button)findViewById(R.id.Regresar);
 
-        ListaUsers = findViewById(R.id.listaDatosG);//llamado al RecycleView
+        ListaUsers = findViewById(R.id.listaDatosLoca);//llamado al RecycleView
         ListaUsers.setHasFixedSize(true);
         ListaUsers.setLayoutManager( new LinearLayoutManager(this));
 

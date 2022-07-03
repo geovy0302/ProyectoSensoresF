@@ -206,7 +206,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <EditText
-        android:id="@+id/Nombre_user"
+        android:id="@+id/Nombre_locali"
         android:layout_width="303dp"
         android:layout_height="54dp"
         android:layout_alignParentEnd="true"
@@ -238,7 +238,7 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/Nombre_user"
+        app:layout_constraintEnd_toStartOf="@+id/Nombre_locali"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"></TextView>
@@ -279,7 +279,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.803"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Nombre_user" />
+        app:layout_constraintTop_toBottomOf="@+id/Nombre_locali" />
 
     <TextView
         android:id="@+id/textView2"

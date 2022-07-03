@@ -27,7 +27,7 @@ public class MenuPrincipalAdmin extends AppCompatActivity {
         //tipo_User=extras.getString("tipo_User");
         //nombre=extras.getString("nombreUser");
 
-        Button Opcion1 = (Button)findViewById(R.id.opcion1);
+        Button Opcion1 = (Button)findViewById(R.id.Opcion1);
         Opcion1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

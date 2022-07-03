@@ -80,17 +80,17 @@ public class BuscarUser extends BasedelMenuOpcUAdmin  {
         titulo6.setVisibility(View.INVISIBLE);
         titulo7.setVisibility(View.INVISIBLE);
 
-        idUser = (TextView) findViewById(R.id.Id_User);
+        idUser = (TextView) findViewById(R.id.Id_locali);
 
 
-        idUser = (TextView) findViewById(R.id.Id_User);
-        nombreUser = (TextView) findViewById(R.id.Nombre_user);
+        idUser = (TextView) findViewById(R.id.Id_locali);
+        nombreUser = (TextView) findViewById(R.id.Nombre_locali);
         loginUser = (TextView) findViewById(R.id.Login_user);
         telefono_user = (TextView) findViewById(R.id.Telefono_user);
         Edad_user = (TextView) findViewById(R.id.edad_user);
         PasswordUser = (TextView) findViewById(R.id.contrasena_user);
         tipoUser = (TextView) findViewById(R.id.Tipo_user);
-        retornar1= (Button) findViewById(R.id.Retornar1);
+        retornar1= (Button) findViewById(R.id.Regresar);
          retornarAux= (Button) findViewById(R.id.retornar);
         retornar2= (Button) findViewById(R.id.anadiruser);
         buscar= (Button) findViewById(R.id.Retornar2);

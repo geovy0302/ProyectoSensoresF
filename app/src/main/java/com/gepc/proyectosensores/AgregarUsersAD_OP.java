@@ -63,7 +63,7 @@ public class AgregarUsersAD_OP extends BasedelMenuOpcUAdmin  {
         nombre = objGlobalAux.getNombreUsuario();
         Signedinusername.setText(nombre);
 
-        nombreUser = (EditText) findViewById(R.id.Nombre_user);
+        nombreUser = (EditText) findViewById(R.id.Nombre_locali);
         loginUser = (EditText) findViewById(R.id.Login_user);
         telefono_user = (EditText) findViewById(R.id.Telefono_user);
         Edad_user = (EditText) findViewById(R.id.edad_user);

@@ -71,8 +71,8 @@ public class ListaUsuariosAdaptor extends RecyclerView.Adapter<ListaUsuariosAdap
                     mListener.onItemClick(view, getAdapterPosition());
                 }
             });
-            viewId = itemView.findViewById(R.id.View_Indice);
-            viewNombre = itemView.findViewById(R.id.View_hora);
+            viewId = itemView.findViewById(R.id.View_ID_Localizacion);
+            viewNombre = itemView.findViewById(R.id.View_Nombre_Locali);
             view_LoginUser = itemView.findViewById(R.id.View_LoginUser);
             view_tipoUser = itemView.findViewById(R.id.View_tipoUser);
         }

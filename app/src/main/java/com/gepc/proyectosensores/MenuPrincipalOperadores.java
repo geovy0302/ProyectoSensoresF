@@ -29,7 +29,7 @@ public class MenuPrincipalOperadores extends AppCompatActivity {
 
 
 
-        Button Opcion1 = (Button)findViewById(R.id.opcion1);
+        Button Opcion1 = (Button)findViewById(R.id.Opcion1);
         Opcion1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

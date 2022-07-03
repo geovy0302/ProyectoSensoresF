@@ -74,12 +74,12 @@ public class DatosPorSensoPF_UO extends BasedelMenuOpcUOperador {
         SensorEscogido= extras.getString("SensorEscogido");
 
 
-        listaDatosG = findViewById(R.id.listaDatosG);//llamado al RecycleView
+        listaDatosG = findViewById(R.id.listaDatosLoca);//llamado al RecycleView
         listaDatosG.setHasFixedSize(true);
         listaDatosG.setLayoutManager( new LinearLayoutManager(this));
         listaDatosG.setVisibility(View.INVISIBLE);
 
-        Retornar1= (Button) findViewById(R.id.Retornar1);
+        Retornar1= (Button) findViewById(R.id.Regresar);
         Retornar2= (Button) findViewById(R.id.Retornar2);
         Retornar1.setVisibility(View.INVISIBLE);
         Retornar2.setVisibility(View.INVISIBLE);

@@ -206,7 +206,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
-        android:id="@+id/Nombre_user"
+        android:id="@+id/Nombre_locali"
         android:layout_width="303dp"
         android:layout_height="54dp"
         android:layout_alignParentEnd="true"
@@ -221,7 +221,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.806"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Id_User" />
+        app:layout_constraintTop_toBottomOf="@+id/Id_locali" />
 
     <TextView
         android:id="@+id/textView8"
@@ -238,13 +238,13 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/Nombre_user"
+        app:layout_constraintEnd_toStartOf="@+id/Nombre_locali"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"></TextView>
 
     <TextView
-        android:id="@+id/Id_User"
+        android:id="@+id/Id_locali"
         android:layout_width="303dp"
         android:layout_height="54dp"
         android:layout_alignParentEnd="true"
@@ -276,7 +276,7 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/Id_User"
+        app:layout_constraintEnd_toStartOf="@+id/Id_locali"
         app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"></TextView>
@@ -317,7 +317,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.803"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Nombre_user" />
+        app:layout_constraintTop_toBottomOf="@+id/Nombre_locali" />
 
     <TextView
         android:id="@+id/textView2"
@@ -348,7 +348,7 @@
         app:srcCompat="@drawable/user2" />
 
     <Button
-        android:id="@+id/Retornar1"
+        android:id="@+id/Regresar"
         android:layout_width="585dp"
         android:layout_height="78dp"
         android:layout_alignParentStart="true"

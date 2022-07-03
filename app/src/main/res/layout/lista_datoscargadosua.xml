@@ -59,7 +59,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/View_Indice"
+                                android:id="@+id/View_ID_Localizacion"
                                 android:layout_width="match_parent"
                                 android:layout_height="35dp"
                                 android:layout_weight="1"
@@ -88,7 +88,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/View_hora"
+                                android:id="@+id/View_Nombre_Locali"
                                 android:layout_width="match_parent"
                                 android:layout_height="35dp"
                                 android:layout_weight="1"

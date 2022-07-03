@@ -79,7 +79,7 @@ public class DatosPorSensor_UO extends BasedelMenuOpcUOperador {
         BuscarElSensor= (Button) findViewById(R.id.Retornar2);
         BuscarElSensor.setVisibility(View.INVISIBLE);
 
-        buscarDatosPorLocaliyTipo = (Button) findViewById(R.id.Retornar1);
+        buscarDatosPorLocaliyTipo = (Button) findViewById(R.id.Regresar);
 
         localizacionesBuscar();
         localizacionesS.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
