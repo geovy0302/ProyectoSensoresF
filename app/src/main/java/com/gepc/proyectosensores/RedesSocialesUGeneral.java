@@ -71,21 +71,21 @@ public class RedesSocialesUGeneral extends BasedelMenuOpcUGeneral {
                 // TODO Auto-generated method stub
                 if(position == 0) {
                     Toast.makeText(getApplicationContext()," Haz seleccionado el App de Facebook ",Toast.LENGTH_SHORT).show();
-                    app_a_visitar="https://www.facebook.com/";
+                    app_a_visitar="https://www.facebook.com/profile.php?id=100082510822198";
                     Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse(app_a_visitar));
                     startActivity(intent);
                 }
 
                 else if(position == 1) {//code specific to 2nd list item
                     Toast.makeText(getApplicationContext()," Haz seleccionado el App de Instagram ",Toast.LENGTH_SHORT).show();
-                    app_a_visitar="https://www.google.com/";
+                    app_a_visitar="https://www.instagram.com/uv_phyton_app/";
                     Intent intent2=new Intent(Intent.ACTION_VIEW, Uri.parse(app_a_visitar));
                     startActivity(intent2);
                 }
 
                 else if(position == 2) {
                     Toast.makeText(getApplicationContext()," Haz seleccionado el App de YouTube ",Toast.LENGTH_SHORT).show();
-                    app_a_visitar="https://www.youtube.com/channel/UCHfgQ3YDfB41AaQZ8vJQDjw/featured";
+                    app_a_visitar="https://www.youtube.com/channel/UChRRSg7FQRSd8_t0JMLyVFA";
                     Intent intent3=new Intent(Intent.ACTION_VIEW, Uri.parse(app_a_visitar));
                     startActivity(intent3);
                 }

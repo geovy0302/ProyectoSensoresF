@@ -51,6 +51,7 @@
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_agregar_cuidados_piel_ua.xml" value="0.11" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_agregar_localizacion_ua.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_agregar_localizacion_uo.xml" value="0.10208333333333333" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_agregar_senso_ruo.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_agregar_sensor_ua.xml" value="0.12" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_agregar_tipode_sensor_ua.xml" value="0.14" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_agregar_tipode_sensor_uo.xml" value="0.10208333333333333" />
@@ -65,6 +66,8 @@
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_bienvenida_user_general.xml" value="0.12" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_bienvenida_user_operador.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_buscar_user.xml" value="0.12" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_busqueda_sensores_ua.xml" value="0.16" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_busqueda_sensores_uo.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_datos_por_senso_pf_uo.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_datos_por_sensor_pf_ua.xml" value="0.12" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_datos_por_sensor_ua.xml" value="0.12" />
@@ -84,18 +87,25 @@
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_menuprinicipal_operador.xml" value="0.12" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_modificar_cuidados_piel_ua.xml" value="0.12" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_modificar_datos_users.xml" value="0.12" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_modificar_info_sensores_ua.xml" value="0.1" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_modificar_info_sensores_uo.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_modificar_localizacion_ua.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_modificar_localizacion_uo.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_modificar_sensores_ua.xml" value="0.14" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_modificar_sensores_uo.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_modificar_tipo_sensor_ua.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_modificar_tipo_sensor_uo.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_modificar_tips_del_dia.xml" value="0.15" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_mostrar_datos_users.xml" value="0.1" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_mostrar_info_sensores_ua.xml" value="0.10208333333333333" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_mostrar_info_sensores_uo.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_mostrar_sensores_ua.xml" value="0.15" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_mostrar_sensores_uo.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_redes_sociales_ugeneral.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_registro_de_cuidados_piel_ua.xml" value="0.1" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_registro_de_tips_del_dia.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_registro_sensores_ua.xml" value="0.15" />
+        <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_registro_sensores_uo.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_registro_usuario_ua.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_registrode_sensores_ua.xml" value="0.10208333333333333" />
         <entry key="..\:/Users/geovy/Desktop/EscritorioDeProgramasDSVI2022/ProyectoSensores/app/src/main/res/layout/activity_registrode_sensores_uo.xml" value="0.10208333333333333" />

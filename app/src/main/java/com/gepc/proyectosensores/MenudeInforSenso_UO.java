@@ -61,9 +61,9 @@ public class MenudeInforSenso_UO extends BasedelMenuOpcUOperador {
         Opcion3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent intenOpcion3 = new Intent(MenudeInforSenso_UA.this,com.gepc.proyectosensores.loginNormal.class);
+                Intent intenOpcion3 = new Intent(MenudeInforSenso_UO.this,com.gepc.proyectosensores.RegistroSensores_UO.class);
                 startActivity(intenOpcion3);
-                finish();*/
+                finish();
             }
         });
 
@@ -71,9 +71,9 @@ public class MenudeInforSenso_UO extends BasedelMenuOpcUOperador {
         Opcion4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent intenOpcion4 = new Intent(MenudeInforSenso_UA.this,com.gepc.proyectosensores.loginNormal.class);
+                Intent intenOpcion4 = new Intent(MenudeInforSenso_UO.this,com.gepc.proyectosensores.BusquedaSensores_UO.class);
                 startActivity(intenOpcion4);
-                finish();*/
+                finish();
             }
         });
     }

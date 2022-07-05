@@ -19,6 +19,36 @@
         tools:replace="android:usesCleartextTraffic"
         tools:targetApi="31">
         <activity
+            android:name=".MostrarInfoSensores_UO"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarInfoSensores_UO"
+            android:exported="false" />
+        <activity
+            android:name=".BusquedaSensores_UO"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarInfoSensores_UA"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarInfoSensores_UA"
+            android:exported="false" />
+        <activity
+            android:name=".BusquedaSensores_UA"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarSensoR_UO"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarSensores_UO"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarSensores_UO"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroSensores_UO"
+            android:exported="false" />
+        <activity
             android:name=".AgregarSensor_UA"
             android:exported="false" />
         <activity

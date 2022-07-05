@@ -1,5 +1,6 @@
 package com.gepc.proyectosensores;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -52,6 +53,7 @@ public class IndiceCalculado_UGeneral extends BasedelMenuOpcUGeneral {
     ImageView icono1, icono2,icono3,icono4,icono5;
     TextView indiceGenerado, horaGenerada, calificacionBaja,calificacionModerada, calificacionAlta, calificacionMuyAlta, calificacionExtrema ;
     RecyclerView ListaCuidados;
+    Button añadir, retornar;
     CuidadoUGenedaptor AdapterNecesario;
 
 
@@ -86,6 +88,7 @@ public class IndiceCalculado_UGeneral extends BasedelMenuOpcUGeneral {
         icono3.setVisibility(View.INVISIBLE);
         icono4.setVisibility(View.INVISIBLE);
         icono5.setVisibility(View.INVISIBLE);
+        retornar = (Button)findViewById(R.id.regresar2);
 
         indiceGenerado = (TextView)findViewById(R.id.indiceEncontrado);
         horaGenerada = (TextView)findViewById(R.id.horaRegistro);
@@ -111,10 +114,14 @@ public class IndiceCalculado_UGeneral extends BasedelMenuOpcUGeneral {
 
         TraerIndice();
 
-
-
-        //objGlobalAux= (ClaseGlobal) getApplicationContext();
-        //Double indiceCalculadoAux = objGlobalAux.getIndiceGenerado();
+        retornar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intenbuscaruser = new Intent(IndiceCalculado_UGeneral.this, com.gepc.proyectosensores.EscogerLocalizacion_UGeneral.class);
+                startActivity(intenbuscaruser);
+                finish();
+            }
+        });
 
 
     }
