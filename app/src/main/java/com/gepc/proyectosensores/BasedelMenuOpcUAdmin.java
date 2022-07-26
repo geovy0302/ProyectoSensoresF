@@ -74,6 +74,12 @@ public class BasedelMenuOpcUAdmin extends AppCompatActivity implements Navigatio
                 overridePendingTransition(0, 0);
                 finish();
                 break;
+
+            case R.id.Pantalla6:
+                startActivity(new Intent(this, Escoger_LTS_Manual_Admin.class));
+                overridePendingTransition(0, 0);
+                finish();
+                break;
         }
         return false;
     }

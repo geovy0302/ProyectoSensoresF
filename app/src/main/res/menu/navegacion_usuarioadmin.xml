@@ -18,6 +18,11 @@
             android:icon="@drawable/medidor_ruv"
             android:title=" Datos por Sensor "></item>
         <item
+            android:id="@+id/Pantalla6"
+            android:icon="@drawable/registro_manual"
+            android:title=" Insersión Manual de Datos "></item>
+
+        <item
             android:id="@+id/Pantalla4"
             android:icon="@drawable/tips_informativos"
             android:title=" Administrador de Consejos  "></item>
